@@ -16,6 +16,8 @@ html {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
+    display: flex;
 }
 
 a {
@@ -23,16 +25,30 @@ a {
     display: flex;
 }
 
-.landing {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .section {
     padding: 0 32px;
+    width: 100%;
 }
 
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    padding: 80px 0;
+}
+
+.text__highlight {
+    color: #6415ff;
+}
+
+p {
+    line-height: 1.5;
+}
 
 
 /* NAVIGATION */
@@ -42,6 +58,7 @@ a {
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
@@ -52,7 +69,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 28px;
+    margin: 0 auto;
 }
 
 .nav__logo--img {
@@ -95,3 +112,104 @@ nav {
     border-radius: 30px;
     line-height: 1.5;
 }
+
+/* --- LANDING --- */
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.header__description--title {
+    font-size: 36px;
+
+}
+
+.header__description--para {
+    font-size: 16px;
+    margin: 32px 0;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 440px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500;
+}
+
+.header__image--wrapper {
+    width: 40%;
+}
+
+.header__img {
+    width: 100%;
+}
+
+/* --- FEATURES --- */
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    width: calc(100%/3)
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- QUALITY WORK --- */
+
+.quality__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+}
+
+/* --- STEPS --- */
+
+.steps__image--wrapper {
+    width: 50%;
+}
+
+.steps__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+}
+
+/* --- VALUES --- */
+
+
+
+/* --- PRICING --- */
+
+
+/* --- TESTIMONIALS --- */
+
+
+/* --- CALL TO ACTION --- */
+
+
+/* --- FOOTER --- */
