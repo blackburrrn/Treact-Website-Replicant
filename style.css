@@ -22,7 +22,10 @@ html {
 
 a {
     text-decoration: none;
-    display: flex;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
@@ -33,6 +36,14 @@ section {
 button {
     cursor: pointer;
     border: none;
+}
+
+button:hover {
+    background-color: rgba(60, 13, 153);
+}
+
+.button:active {
+    transform: translateY(2px);
 }
 
 .section__tag {
@@ -138,8 +149,12 @@ nav {
 
 .nav__links {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .nav__link {
@@ -680,6 +695,11 @@ nav {
     transition: all 300ms ease;
 }
 
+.pricing__plan--btn:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 /* --- TESTIMONIALS --- */
 
 .testimonials__img--wrapper {
@@ -773,6 +793,10 @@ nav {
     transition: all 300ms ease;
 }
 
+.testimonial__button:hover {
+    background-color: rgb(229, 231, 235);
+}
+
 .divider {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -834,6 +858,10 @@ nav {
     transition: all 300ms ease;
 }
 
+.start__button:hover {
+    background-color: rgba(229, 62, 62);
+}
+
 .start__contact {
     padding: 20px 40px;
     border-radius: 500px;
@@ -846,6 +874,11 @@ nav {
     background-color: rgb(100, 21, 255);
     border: 1px solid rgb(160, 174, 192);
     transition: all 300ms ease;
+}
+
+.start__contact:hover {
+    background-color: rgba(247, 250, 252);
+    color: rgba(100, 21, 255);
 }
 
 /* --- FOOTER --- */
@@ -900,6 +933,10 @@ footer {
     font-weight: 500;
     position: relative;
     cursor: pointer;
+}
+
+.footer__column--link:hover {
+    text-decoration: line-through;
 }
 
 .footer__divider {
@@ -957,4 +994,16 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms ease;
+}
+
+/* --- TABLETS --- */
+
+@media (max-width: 768px) {
+
+}
+
+/* --- PHONES --- */
+
+@media (max-width: 550px) {
+
 }
