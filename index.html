@@ -271,30 +271,36 @@
                         <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam fugit laborum molestiae quas modi totam itaque labore. Eos quaerat illo ex totam cumque itaque eum, expedita nemo cum quae!</p>
                         <div class="testimonial">
                             <div class="testimonial__star--rating">
-                                <i class="fa fa-star" area-hidden="true"></i>
-                                <i class="fa fa-star" area-hidden="true"></i>
-                                <i class="fa fa-star" area-hidden="true"></i>
-                                <i class="fa fa-star" area-hidden="true"></i>
-                                <i class="fa fa-star-half" area-hidden="true"></i>
+                                <i class="fa-solid fa-star" area-hidden="true"></i>
+                                <i class="fa-solid fa-star" area-hidden="true"></i>
+                                <i class="fa-solid fa-star" area-hidden="true"></i>
+                                <i class="fa-solid fa-star" area-hidden="true"></i>
+                                <i class="fa-solid fa-star-half" area-hidden="true"></i>
                             </div>
                             <h2 class="testimonial__title">Amazing User Experience</h2>
                             <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quam fugit laborum molestiae quas modi totam itaque labore. Eos quaerat illo ex totam cumque itaque eum, expedita nemo cum quae!</p>
                         </div>
                         <div class="testimonial__footer">
-                            <div class="testimonial__profile-picture">
+                            <div class="testimonial__profile">
                                 <img class="testimonial__profile--img" src="./Assets/photo-1494790108377-be9c29b29330.avif" alt="Profile Picture">
-                            </div>
+                            
                             <div class="testimonial__details">
-                                <h2 class="testimonial__name">Charlotte Hale</h2>
-                                <p class="testimonial__title">Director, Delos Inc.</p>
+                                <div class="testimonial__name">Charlotte Hale</div>
+                                <p class="testimonial__title--hale">Director, Delos Inc.</p>
+                            </div>
                             </div>
                             <div class="testimonial__buttons">
-                                <button>
-                                    <i class="fa-solid fa-arrow-left"></i>
-                                </button>
-                                <button>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
+                                <div class="testimonial__button">
+                                    <button>
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="testimonial__button">
+                                    <button>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -304,9 +310,15 @@
         <section id="start">
             <div class="container">
                 <div class="row">
-                    <h2 class="start__cta">Developers all over the world are happily using treact.</h2>
-                    <button class="start__button">Get Started</button>
-                    <button class="start__contact">Contact Us</button>
+                    <div class="start__container">
+                        <div class="start__row">
+                            <div class="start__cta">Developers all over the world are happily using treact.</div>
+                            <div class="start__btns">
+                                <button class="start__button">Get Started</button>
+                                <button class="start__contact">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -315,53 +327,58 @@
         <div class="row footer__row">
             <div class="footer__column--wrapper">
                 <div class="footer__column">
-                    <h2 class="footer__column--title">Main</h2>
+                    <div class="footer__column--title">Main</div>
                         <a class="footer__column--link">Blog</a>
                         <a class="footer__column--link">FAQs</a>
                         <a class="footer__column--link">Support</a>
                         <a class="footer__column--link">About Us</a>  
                 </div>
                 <div class="footer__column">
-                    <h2 class="footer__column--title">Product</h2>
+                    <div class="footer__column--title">Product</div>
                         <a class="footer__column--link">Log In</a>
                         <a class="footer__column--link">Personal</a>
                         <a class="footer__column--link">Business</a>
                         <a class="footer__column--link">Team</a> 
                 </div>
                 <div class="footer__column">
-                    <h2 class="footer__column--title">Press</h2>
+                    <div class="footer__column--title">Press</div>
                         <a class="footer__column--link">Logos</a>
                         <a class="footer__column--link">Events</a>
                         <a class="footer__column--link">Stories</a>
                         <a class="footer__column--link">Office</a>  
                 </div>
                 <div class="footer__column">
-                    <h2 class="footer__column--title">Team</h2>
+                    <div class="footer__column--title">Team</div>
                         <a class="footer__column--link">Career</a>
                         <a class="footer__column--link">Founders</a>
                         <a class="footer__column--link">Culture</a>
                         <a class="footer__column--link">Onboarding</a> 
                 </div>
                 <div class="footer__column">
-                    <h2 class="footer__column--title">Legal</h2>
+                    <div class="footer__column--title">Legal</div>
                         <a class="footer__column--link">GDPR</a>
                         <a class="footer__column--link">Privacy Policy</a>
                         <a class="footer__column--link">Terms of Service</a>
                         <a class="footer__column--link">Disclaimer</a>  
                 </div>
             </div>
+            <div class="footer__divider"></div>
             <div class="footer__signature">
                 <div class="footer__logo">
                     <img class="footer__logo--img" src="./Assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="Treact Logo White"></img>
                     <p class="footer__logo--name">Treact</p>
                 </div>
-                <p class="footer__copyright">© 2026 Treact Inc. All Rights Reserved.</p>
+                <div class="footer__copyright">© 2026 Treact Inc. All Rights Reserved.</div>
                 <div class="footer__socials">
-                    <button>
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </button>
+                        <a class="footer__socials--link" src="fa-brands fa-facebook-f">
+                            <i class="fa-brands fa-facebook-f"></i> 
+                        </a>
+                        <a class="footer__socials--link" src="fa-brands fa-twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="footer__socials--link" src="fa-brands fa-youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
                 </div>
             </div>
         </div>
