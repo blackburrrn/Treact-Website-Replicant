@@ -385,8 +385,7 @@ nav {
     width: 100%;
     border: 1px solid rgb(229, 231, 235);
     border-radius: 4px;
-    margin: 0 56px;
-    display: flex;
+    margin: 0 auto;
 }
 
 .quality__btn {
@@ -400,6 +399,7 @@ nav {
     transition: all 300ms ease;
     cursor: pointer;
     margin-top: 32px;
+    width: 144px;
 }
 
 /* --- STEPS --- */
@@ -557,18 +557,19 @@ nav {
     width: 100%;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .pricing__plan {
-    width: 380px;
+    width: calc(80%/3);
     display: flex;
     flex-direction: column;
     position: relative;
     margin-top: 4rem;
     border-radius: 0.5rem;
     align-items: center;
-    background-color: rgb(255 255 255);
+    background-color: rgb(244, 244, 244);
     text-align: center;
     color: rgb(26 32 44);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -996,6 +997,63 @@ footer {
 
 /* --- TABLETS --- */
 
+@media (max-width: 1024px) {
+    .header__row,
+    .quality__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__description,
+    .header__image--wrapper,
+    .quality__description,
+    .quality__img--wrapper {
+        width: 60%;
+    }
+
+    .header__email {
+        margin: 0 auto;
+    }
+
+    .header__customers {
+        padding-right: 0;
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .feature__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quality__btn {
+        margin: 24px auto;
+    }
+
+    .quality__description {
+        margin-right: 0;
+    }
+
+    .section__para--pricing {
+        text-align: center;
+    }
+
+    .pricing__plans {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pricing__plan {
+        width: 40%;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .row {
@@ -1006,6 +1064,11 @@ footer {
 
     .nav__row {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav__link {
+        margin: 4px 16px;
     }
 
     section {
@@ -1041,6 +1104,8 @@ footer {
         margin: 0 16px;
         z-index: 2;
         display: flex;
+        width: calc(80%/2);
+        margin: 0 auto;
     }
 
     .quality__img {
@@ -1053,11 +1118,29 @@ footer {
     }
 
     .step {
-        align-items: center;
+        justify-content: center;
+        text-align: left;
     }
 
-    .values {
-        justify-content: center;
+    .steps__description {
+        padding-left: 0;
+    }
+
+    .values__description {
+        padding-right: 0;
+    }
+
+    .value {
+        padding: 32px 32px;
+        margin: 0 auto;
+    }
+
+    .value__title {
+        margin: 0 auto;
+    }
+
+    .values__btn {
+        margin-top: 4px;
     }
 
     .pricing__plans {
@@ -1065,20 +1148,78 @@ footer {
         justify-content: center;
     }
 
+    .section__para--pricing {
+        margin-bottom: 32px;
+    }
+
+    .pricing__plan {
+        margin-top: 4px;
+    }
+
+    .testimonials__description {
+        padding-left: 0;
+    }
+
     .start__cta {
         font-size: 24px;
+    }
+
+    .start__row,
+    .start__btns {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .start__button {
+        margin-right: 0;
     }
 }
 
 /* --- PHONES --- */
 
 @media (max-width: 550px) {
+ 
     .nav__links {
         visibility: hidden;
     }
 
     .btn__menu {
         visibility: visible;
+    }
+
+    .fa-bars {
+        transform: scale(2);
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .value:nth-of-type(1),
+    .value:nth-of-type(2) {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+    }
+
+    .pricing__plan {
+        width: 65%;
+    }
+
+    .testimonial__footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .testimonial__profile--img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
     }
 
     .start__row {
@@ -1093,6 +1234,22 @@ footer {
         width: 100%;
         justify-content: center;
         padding-top: 16px;
+    }
+
+    .footer__column--wrapper {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__column {
+        width: calc(80%/2)
+    }
+
+    .footer__signature {
+        flex-direction: column;
+        gap: 32px;
     }
 
     .footer__copyright {
